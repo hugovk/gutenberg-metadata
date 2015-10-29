@@ -38,7 +38,7 @@ i = 0
 # https://www.gutenberg.org/ebooks/search/%3Fsort_order%3Drelease_date
 
 # while(i <= 10):  # For testing
-while(i <= 50334):
+while(i <= 50332):
     if i % 100 == 0:
         sys.stdout.write(str(i) + "\r")
     metadata[i]['title'] = fronzenhack(get_metadata('title', i))
