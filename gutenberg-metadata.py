@@ -21,7 +21,7 @@ class AutoVivification(dict):
             return value
 
 
-def fronzenhack(metadata):
+def frozenhack(metadata):
     """Workaround for https://github.com/c-w/Gutenberg/issues/22
     get_metadata('author', 2701) returns frozenset([u'Melville, Hermann'])
     instead of 'Melville, Hermann'.
@@ -38,11 +38,11 @@ i = 0
 # https://www.gutenberg.org/ebooks/search/%3Fsort_order%3Drelease_date
 
 # while(i <= 10):  # For testing
-while(i <= 53412):
+while(i <= 53404):
     if i % 100 == 0:
         sys.stdout.write(str(i) + "\r")
-    metadata[i]['title'] = fronzenhack(get_metadata('title', i))
-    metadata[i]['author'] = fronzenhack(get_metadata('author', i))
+    metadata[i]['title'] = frozenhack(get_metadata('title', i))
+    metadata[i]['author'] = frozenhack(get_metadata('author', i))
     i += 1
 sys.stdout.write("\r\n")
 
