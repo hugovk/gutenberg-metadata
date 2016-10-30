@@ -1,6 +1,6 @@
 # gutenberg-metadata
 
-Metadata from Project Gutenberg. For example:
+Metadata from 53,404 Project Gutenberg ebooks. For example:
 
 ```json
   "1": {
