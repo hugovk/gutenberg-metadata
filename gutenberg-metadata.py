@@ -32,7 +32,7 @@ def frozenhack(metadata):
         return None
 
 metadata = AutoVivification()
-i = 0
+i = 1
 
 # Set this magic number to ID of the latest released book:
 # https://www.gutenberg.org/ebooks/search/%3Fsort_order%3Drelease_date
