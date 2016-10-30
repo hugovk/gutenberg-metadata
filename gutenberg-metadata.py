@@ -41,8 +41,8 @@ i = 0
 while(i <= 53404):
     if i % 100 == 0:
         sys.stdout.write(str(i) + "\r")
-    metadata[i]['title'] = frozenhack(get_metadata('title', i))
-    metadata[i]['author'] = frozenhack(get_metadata('author', i))
+    for feature_name in ['title', 'author']:
+        metadata[i][feature_name] = frozenhack(get_metadata(feature_name, i))
     i += 1
 sys.stdout.write("\r\n")
 
