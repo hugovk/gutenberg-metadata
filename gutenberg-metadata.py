@@ -38,7 +38,7 @@ i = 1  # First ebook starts at 1
 # https://www.gutenberg.org/ebooks/search/%3Fsort_order%3Drelease_date
 
 # while(i <= 100):  # For testing
-while(i <= 53404):
+while(i <= 54662):
     if i % 100 == 0:
         sys.stdout.write(str(i) + "\r")
     for feature_name in ['author', 'formaturi', 'language', 'rights',

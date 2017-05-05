@@ -1,6 +1,6 @@
 # gutenberg-metadata
 
-Metadata from 53,404 Project Gutenberg ebooks.
+Metadata from 54,662 Project Gutenberg ebooks.
 
 Uses the [Gutenberg](https://github.com/c-w/Gutenberg) library.
 
