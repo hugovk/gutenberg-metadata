@@ -63,7 +63,7 @@ if __name__ == "__main__":
         '-i', '--id', type=int,
         default=55802,
         help="ID of latest released book: https://"
-             "www.gutenberg.org/ebooks/search/%3Fsort_order%3Drelease_date")
+             "www.gutenberg.org/ebooks/search/?sort_order=release_date")
     args = parser.parse_args()
 
     get_all_metadata(args.id)
