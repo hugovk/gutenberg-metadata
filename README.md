@@ -4,9 +4,17 @@
 
 Metadata from 55,809 Project Gutenberg ebooks.
 
+## The data
+
+Grab the data from [gutenberg-metadata.json](http://hugovk.github.io/gutenberg-metadata/gutenberg-metadata.json).
+
+## To generate
+
 Uses the [Gutenberg](https://github.com/c-w/Gutenberg) library.
 
 Run `gutenberg-metadata.py` to generate `gutenberg-metadata.json`.
+
+## Sample data
 
 For example:
 
