@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/hugovk/gutenberg-metadata.svg?branch=master)](https://travis-ci.org/hugovk/gutenberg-metadata)
 
-Metadata from 54,662 Project Gutenberg ebooks.
+Metadata from 55,809 Project Gutenberg ebooks.
 
 Uses the [Gutenberg](https://github.com/c-w/Gutenberg) library.
 
