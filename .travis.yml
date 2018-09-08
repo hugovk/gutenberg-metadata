@@ -20,5 +20,8 @@ script:
  - pyflakes .
  - pycodestyle --statistics --count .
 
+ # Validate
+ - python validate-json.py
+
 matrix:
   fast_finish: true
