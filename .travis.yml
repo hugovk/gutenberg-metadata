@@ -1,4 +1,6 @@
 language: python
+cache: pip
+sudo: false
 
 # Supported CPython versions:
 # https://en.wikipedia.org/wiki/CPython#Version_history
@@ -10,15 +12,12 @@ python:
  - 3.5
  - 3.4
 
-sudo: false
-
 install:
- - pip install pycodestyle pyflakes
+ - pip install -U flake8
 
 script:
  # Static analysis
- - pyflakes .
- - pycodestyle --statistics --count .
+ - flake8
 
  # Validate
  - python validate-json.py
