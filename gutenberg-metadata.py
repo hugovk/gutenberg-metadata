@@ -15,7 +15,7 @@ from gutenberg.query import get_metadata
 
 # http://stackoverflow.com/a/652284/724176
 class AutoVivification(dict):
-    """Implementation of perl's autovivification feature."""
+    """Implementation of Perl's autovivification feature."""
 
     def __getitem__(self, item):
         try:
@@ -67,18 +67,20 @@ def get_all_metadata(last_ebook_id):
         )
 
 
+class Formatter(argparse.ArgumentDefaultsHelpFormatter, argparse.RawTextHelpFormatter):
+    pass
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Extract the metadata from Project Gutenberg",
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+        formatter_class=Formatter,
     )
     parser.add_argument(
-        "-i",
-        "--id",
+        "id",
         type=int,
-        default=55802,
-        help="ID of latest released book: https://"
-        "www.gutenberg.org/ebooks/search/?sort_order=release_date",
+        help="ID of latest released book:\n"
+        "https://www.gutenberg.org/ebooks/search/?sort_order=release_date\n",
     )
     args = parser.parse_args()
 
