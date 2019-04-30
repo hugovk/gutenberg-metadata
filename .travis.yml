@@ -1,6 +1,5 @@
 language: python
 cache: pip
-sudo: false
 
 # Supported CPython versions:
 # https://en.wikipedia.org/wiki/CPython#Version_history
