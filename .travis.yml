@@ -5,21 +5,16 @@ cache: pip
 # https://en.wikipedia.org/wiki/CPython#Version_history
 python:
  - pypy3
- - pypy
- - 2.7
  - 3.6
- - 3.5
- - 3.4
 
 install:
  - pip install -U pip
- - pip install -U flake8
- - if [[ $TRAVIS_PYTHON_VERSION == 3.6 ]]; then pip install -U black; fi
+ - pip install -U black flake8
 
 script:
  # Static analysis
- - flake8
- - if [[ $TRAVIS_PYTHON_VERSION == 3.6 ]]; then black --check --diff .; fi
+ - flake8 --statistics --count
+ - black --check --diff .
 
  # Validate
  - python validate-json.py
