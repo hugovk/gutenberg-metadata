@@ -2,7 +2,7 @@
 
 [![Lint](https://github.com/hugovk/gutenberg-metadata/actions/workflows/lint.yml/badge.svg)](https://github.com/hugovk/gutenberg-metadata/actions/workflows/lint.yml)
 
-Metadata from 60,559 Project Gutenberg ebooks.
+Metadata from 66,618 Project Gutenberg ebooks.
 
 ## The data
 
