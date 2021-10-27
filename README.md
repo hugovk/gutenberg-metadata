@@ -1,6 +1,6 @@
 # gutenberg-metadata
 
-[![Build Status](https://travis-ci.org/hugovk/gutenberg-metadata.svg?branch=master)](https://travis-ci.org/hugovk/gutenberg-metadata)
+[![Lint](https://github.com/hugovk/gutenberg-metadata/actions/workflows/lint.yml/badge.svg)](https://github.com/hugovk/gutenberg-metadata/actions/workflows/lint.yml)
 
 Metadata from 60,559 Project Gutenberg ebooks.
 

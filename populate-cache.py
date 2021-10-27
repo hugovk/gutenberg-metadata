@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# encoding: utf-8
 """
 Populate the gutenberg cache
 From https://github.com/c-w/gutenberg#looking-up-meta-data

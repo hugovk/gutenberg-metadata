@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# encoding: utf-8
 """
 Extract the metadata from Project Gutenberg titles using Gutenberg:
 https://github.com/c-w/Gutenberg
