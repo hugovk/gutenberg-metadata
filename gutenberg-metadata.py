@@ -2,7 +2,7 @@
 """
 Extract the metadata from Project Gutenberg titles using Gutenberg:
 https://github.com/c-w/Gutenberg
-Tested on Python 2.7.
+Tested on Python 3.10.
 """
 import argparse
 import json
@@ -16,7 +16,7 @@ from gutenberg.query import get_metadata
 class AutoVivification(dict):
     """Implementation of Perl's autovivification feature."""
 
-    def __getitem__(self, item):
+    def __getitem__(self, item: int):
         try:
             return dict.__getitem__(self, item)
         except KeyError:
@@ -31,7 +31,7 @@ class SetEncoder(json.JSONEncoder):
         return json.JSONEncoder.default(self, obj)
 
 
-def get_all_metadata(last_ebook_id):
+def get_all_metadata(last_ebook_id: int) -> None:
     metadata = AutoVivification()
     i = 1  # First ebook starts at 1
 
