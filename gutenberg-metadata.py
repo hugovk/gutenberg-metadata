@@ -4,6 +4,7 @@ Extract the metadata from Project Gutenberg titles using Gutenberg:
 https://github.com/c-w/Gutenberg
 Tested on Python 3.10.
 """
+
 import argparse
 import json
 import sys
